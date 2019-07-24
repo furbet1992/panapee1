@@ -8,12 +8,18 @@ public class NerveBalls : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") 
+
+        if (other.tag == "Enemy")
         {
-            nerveValue += 1;
-            Debug.Log(nerveValue);
-            Destroy(gameObject);
+            GetComponent<Renderer>().material.color = Color.green;
+            Debug.Log("enemyHit"); 
+        }
+
+        if (other.tag == "Player")
+        {
+            GetComponent<Renderer>().material.color = Color.white;
         }
 
     }
 }
+

@@ -34,7 +34,7 @@ public class EnemyBehaviour : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            Destroy(gameObject);
+            GetComponent<Renderer>().material.color = Color.white;
             Debug.Log("hit"); 
             //Destroy(gameObject.GetComponent<Player>());
         }
