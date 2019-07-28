@@ -32,7 +32,7 @@ public class EnemyBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "orb")
         {
             GetComponent<Renderer>().material.color = Color.white;
             Debug.Log("hit"); 

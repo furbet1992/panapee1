@@ -15,7 +15,7 @@ public class NerveBalls : MonoBehaviour
             Debug.Log("enemyHit"); 
         }
 
-        if (other.tag == "Player")
+        if (other.tag == "orb")
         {
             GetComponent<Renderer>().material.color = Color.white;
         }
