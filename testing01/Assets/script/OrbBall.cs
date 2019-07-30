@@ -15,6 +15,7 @@ public class OrbBall : MonoBehaviour
     void Orbiting()
     {
         transform.Rotate(Vector3.up * orbitSpeed * Time.deltaTime);
+       
     }
     
 
